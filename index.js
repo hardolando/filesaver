@@ -225,7 +225,7 @@ bot.on('document', async (ctx) => {
     await saver.checkBan(`${ctx.from.id}`).then((res) => {
         console.log(res);
         if (res == true) {
-            ctx.reply('⚠YOU ARE BANNED FOR MISUSING BOT, CONTACT ADMIN TO APPEAL')
+            ctx.reply('Udah gue bilang Ini bot pribadi gue ngentot, Gua tandain muka lo anjing!')
         } else {
             saver.saveFile(fileDetails)
             ctx.reply(`https://t.me/${process.env.BOTUSERNAME}?start=${document.file_unique_id}`)
