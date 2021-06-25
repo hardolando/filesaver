@@ -72,7 +72,7 @@ bot.action('POP',(ctx)=>{
 //help
 
 bot.command('/help',(ctx)=>{
-    ctx.reply(`Hello <b>${ctx.from.mention}</b> This is my personal bot, If you want to upload files so you can clone this bot`,{
+    ctx.reply(`Hello <b>${ctx.from.mention}</b> This is my personal bot, If you want to upload files so you can clone this bot/n/nType /help`,{
         parse_mode:'HTML',
         reply_markup:{
             inline_keyboard:[
