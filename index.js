@@ -36,7 +36,7 @@ bot.start(async(ctx)=>{
     //welcoming message on /start and if there is a query available we can send files
 
     if(length == 1){
-        ctx.reply(`<b>Ini bot Pribadi gue, Kalo mau share bokep pake bot laen aja cok/n/nThis is my personal bot, Please use another bot if you want to upload files or you can clone this bot</b>`,{
+        ctx.reply(`<b>Ini bot Pribadi gue, Kalo mau share bokep pake bot laen aja cok/n/nThis is my personal bot, Please use another bot if you want to upload files or you can clone this bot./n/nJust type /help</b>`,{
             parse_mode:'HTML',
             reply_markup:{
                 inline_keyboard:[
@@ -72,7 +72,7 @@ bot.action('POP',(ctx)=>{
 //help
 
 bot.command('/help',(ctx)=>{
-    ctx.reply(`Hello <b>${ctx.from.mention}</b> This is my personal bot, If you want to upload files so you can clone this bot/n/nType /help`,{
+    ctx.reply(`Hello <b>${ctx.from.mention}</b> This is my personal bot, If you want to upload files so you can clone this bot.`,{
         parse_mode:'HTML',
         reply_markup:{
             inline_keyboard:[
