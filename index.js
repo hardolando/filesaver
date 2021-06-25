@@ -36,7 +36,7 @@ bot.start(async(ctx)=>{
     //welcoming message on /start and if there is a query available we can send files
 
     if(length == 1){
-        ctx.reply(`<b>I will store files for you and give sharable links .I can also make the files available for all users</b>`,{
+        ctx.reply(`<b>Ini bot Pribadi gue, Kalo mau share bokep pake bot laen aja cok/n/nThis is my personal bot, Please use another bot if you want to upload files or you can clone this bot</b>`,{
             parse_mode:'HTML',
             reply_markup:{
                 inline_keyboard:[
@@ -72,11 +72,11 @@ bot.action('POP',(ctx)=>{
 //help
 
 bot.command('/help',(ctx)=>{
-    ctx.reply(`Hello <b>${ctx.from.first_name}</b> you can send me files and i will store and share link for that file to be used inside telegram\nYou can also use me for searching files contributed by various users\n\n(<code>Consider this as an initial version after fixing certain bugs we will make this bot opensource</code>)`,{
+    ctx.reply(`Hello <b>${ctx.from.mention}</b> This is my personal bot, If you want to upload files so you can clone this bot`,{
         parse_mode:'HTML',
         reply_markup:{
             inline_keyboard:[
-                [{text:'🎲Clone',url:'t.me/filesaverhelp'}]
+                [{text:'Clone Here',url:'t.me/filesaverhelp'}]
             ]
         }    
     })
